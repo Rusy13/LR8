@@ -1,0 +1,7 @@
+<h3>Задание:</h3> Найти все числа, которые являются автоморфными
+<h4>Форма</h4>
+<%= form_with url: "/lr8c/view", method: :get do |form| %>
+  <p><%= form.label :query, "Введите n" %></p>
+  <p><%= form.number_field :num %></p>
+  <p><%= form.submit "Найти" %></p>
+<% end %>
